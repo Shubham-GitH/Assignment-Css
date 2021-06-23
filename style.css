@@ -1,0 +1,165 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 17px;
+    line-height: 1.5;
+    background: rgba(38, 38, 38);
+    text-align: center;
+}
+
+h1{
+    margin: 0;
+    padding: 16 0;
+}
+h2{
+    margin: 0;
+    padding: 16 0;
+}
+h3{
+    margin: 0;
+    padding: 16 0;
+}
+p {
+    margin: 0;
+    padding: 16 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.Readme-btn {
+    display: inline-block;
+    background: rgba(51,51,51);
+    padding: 16px 32px;
+    color: white;
+    border: 1px solid rgba(102,102,102);
+    margin: 80px 0;
+    text-decoration: none;
+}
+
+#headerbg {
+    min-height: 450px;
+    color: white;
+    text-align: center;
+}
+
+#headerbg .bg-img{
+    position: absolute;
+    background: rgba(51,51,51) url(header-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+#headerbg h1{
+    padding-top: 100px;
+    padding-bottom: 0;
+}
+
+#headerbg .main-box{
+    padding: 0 24px;
+}
+
+#s1 .main-box{
+    padding: 0 24px;
+}
+
+#s1 {
+    color: rgba(51,51,51);
+    background: rgba(234,234,234);
+    padding-bottom: 32px;
+}
+
+
+#s2 {
+    padding: 32px 16px 16px;
+}
+
+#s2 ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#s2 li{
+    margin-bottom: 16px;
+    background: white;
+    color: rgba(51,51,51);
+}
+
+.float-contant{
+    padding: 24px;
+}
+
+#s3{
+    color: rgba(51,51,51);
+    background: white;
+    padding: 32px;
+}
+
+#s4 .float-box{
+    padding: 32px;
+    color: white;
+}
+
+#s4 .float-box:first-child{
+    background: rgba(38,144,212);
+}
+
+#footer{ 
+    background: rgba(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 32px;
+}
+#footer a{
+    color: rgba(38,144,212);
+    text-decoration: none;
+}
+
+@media(min-width: 700px){
+    .sec-grid{
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    }
+
+    .main-box{
+        grid-column: 2/4;
+    }
+
+    #s2 ul{
+        grid-column: 2/4;
+    }
+
+    .float-box{
+        grid-column: span 2;
+    }
+
+    #footer div{
+        grid-column: span 2;
+    }
+
+    #s1 .text{
+        columns: 2;
+        column-gap: 2em;
+    }
+
+    #s1 .text p{
+        padding-top: 0;
+    }
+    #s2 ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    #s2 li{
+        width: 31%;
+    }
+}
